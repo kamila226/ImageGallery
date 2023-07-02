@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: "Ysabeau SC", sans-serif;
+  color: #3f2305;
+}
+
+header {
+  text-align: center;
+  background-color: #f2ead3;
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.gallery--container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+/* Image item */
+
+.item--container {
+  flex-basis: 200px;
+  flex-grow: 10;
+}
+
+.image--container {
+  height: 85%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.username {
+  display: block;
+  color: #3f2305;
+  text-decoration: none;
+  margin-top: 0.5em;
+}
