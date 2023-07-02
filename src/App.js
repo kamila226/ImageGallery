@@ -1,5 +1,6 @@
 import Images from "./Components/Images.js";
 import Header from "./Components/Header.js";
+import Footer from "./Components/Footer.js";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="gallery--container">
         <Images />
       </div>
+      <Footer />
     </>
   );
 }
