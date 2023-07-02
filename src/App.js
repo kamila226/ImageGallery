@@ -1,4 +1,3 @@
-import "./App.css";
 import Images from "./Components/Images.js";
 import Header from "./Components/Header.js";
 
