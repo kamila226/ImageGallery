@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ImageItem from "./ImageItem";
 
 export default function Images() {
   const [images, setImages] = useState([
@@ -30,17 +31,13 @@ export default function Images() {
   }, []);
 
   const imgEl = images.map((image) => (
-    <div className="item--container" key={image.id}>
-      <div className="image--container">
-        <a href={image.link} className="image--link" target="_blank">
-          <img src={image.url} />
-        </a>
-      </div>
-      <a href={image.userUrl} className="username" target="_blank">
-        @{image.user}
-      </a>
-    </div>
+    <ImageItem
+      key={image.id}
+      url={image.url}
+      link={image.link}
+      user={image.user}
+      userUrl={image.userUrl}
+    />
   ));
-
   return <>{imgEl}</>;
 }
